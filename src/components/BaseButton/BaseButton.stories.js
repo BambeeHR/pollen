@@ -49,9 +49,9 @@ export const Gallery = () => ({
       <TypeOverline tag="h1" variant="large">Flat buttons</TypeOverline>
       <div class="flex flex-wrap -mx-8 -my-8">
         <div
-          v-for="variant in variants" 
+          v-for="variant in variants"
           :key="'flat' + variant"
-          :class="variant === 'inverted' ? 'bg-gray-0 m-4 p-4 text-white w-48' : 'm-8 w-56'"
+          :class="variant === 'white' || variant === 'inverted'? 'bg-gray-0 m-4 p-4 text-white w-48' : 'm-8 w-56'"
         >
           <TypeOverline tag="h2" class="mb-2">{{ variant }}</TypeOverline>
           <div v-for= "size in sizes" :key="'flat-regular-' + variant + '-' + size" class="mb-2">

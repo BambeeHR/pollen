@@ -7,7 +7,6 @@
       {
         'field-container--disabled': props.disabled,
         'field-container--invalid': props.invalid,
-        'field-container--focused': props.focused,
       },
     ]"
   >
@@ -55,34 +54,28 @@ export default {
     flex 
     items-center 
     relative
+    transition
+    transform
     /* For legacy */
     box-border
     border-solid;
 }
 
 .field-container--standard {
-  @apply bg-white
-    border-gray-5;
+  @apply bg-white border-gray-5 focus-within:shadow-outline;
 }
 
-.field-container--standard:hover:not(.field-container--disabled) {
-  @apply border-gray-3;
-}
-
-.field-container--standard.field-container--focused,
-.field-container--standard.field-container--focused:hover:not(.field-container--disabled) {
-  @apply shadow-outline;
+.field-container--standard:not(.field-container--disabled):not(:focus-within) {
+  @apply hover:border-gray-4;
 }
 
 .field-container--raised,
-.field-container--raised.field-container--focused,
-.field-container--raised.field-container--focused:hover:not(.field-container--disabled) {
-  @apply bg-white
-    shadow-2;
+.field-container--raised:not(.field-container--disabled) {
+  @apply bg-white shadow-2;
 }
 
-.field-container--raised:hover:not(.field-container--disabled) {
-  @apply shadow-3;
+.field-container--raised:not(.field-container--disabled):not(:focus-within) {
+  @apply hover:shadow-3;
 }
 
 /* .field-container--ghost,

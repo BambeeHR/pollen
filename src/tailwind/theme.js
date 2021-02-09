@@ -35,6 +35,10 @@ const extendedPalette = {
 module.exports.extendedPalette = extendedPalette;
 
 module.exports.default = {
+  backgroundImage: {
+    // Gradient Background Colors
+    'purple-gradient': 'linear-gradient(103.15deg, #6B4392 0%, #3D1266 100%)',
+  },
   boxShadow: {
     '1': '0px 1px 2px rgba(0, 0, 0, 0.12)',
     '2': '0px 1px 2px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.07)',

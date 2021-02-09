@@ -13,17 +13,11 @@
     :variant="variant"
     :size="size"
     :label="label"
-    :focused="hasFocus"
     :error="error"
     :invalid="invalid"
     :disabled="disabled"
   >
-    <VSelect
-      v-bind="passDownProps"
-      @input="handleInput"
-      @search:blur="handleBlur"
-      @search:focus="handleFocus"
-    >
+    <VSelect v-bind="passDownProps" @input="handleInput">
       <template #selected-option-container="{ deselect, option }">
         <BaseChip
           v-if="multiple"
@@ -151,9 +145,6 @@ export default {
       validator: (value) => Object.values(Form.Variants).includes(value),
     },
   },
-  data() {
-    return { hasFocus: false };
-  },
   computed: {
     mappedOptions() {
       return mapOptions(this.options);
@@ -178,12 +169,6 @@ export default {
     },
   },
   methods: {
-    handleBlur() {
-      this.hasFocus = false;
-    },
-    handleFocus() {
-      this.hasFocus = true;
-    },
     handleInput(e) {
       let val = '';
       if (this.multiple) {

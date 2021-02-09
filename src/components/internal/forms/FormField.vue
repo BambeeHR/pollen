@@ -32,10 +32,6 @@ export default {
       type: String,
       default: null,
     },
-    focused: {
-      type: Boolean,
-      default: false,
-    },
     id: {
       type: String,
       required: true,
@@ -61,7 +57,6 @@ export default {
     passDownProps() {
       return {
         disabled: this.disabled,
-        focused: this.focused,
         invalid: this.invalid || !!this.error,
         size: this.size,
         variant: this.variant,

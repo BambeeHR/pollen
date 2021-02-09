@@ -35,8 +35,8 @@ export const Colors = () => ({
     <TypeOverline tag="h2" variant="large">Colors</TypeOverline>
     <div class="flex flex-wrap -mx-2">
       <div
-        v-for="(value, key) in colors" 
-        :key="key" 
+        v-for="(value, key) in colors"
+        :key="key"
         class="text-12 m-2 w-32"
       >
         <div

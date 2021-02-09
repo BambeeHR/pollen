@@ -56,7 +56,7 @@ export default {
     inline-flex
     items-center
     rounded-full
-    whitespace-no-wrap
+    whitespace-nowrap
     /* For legacy */
     border-solid;
 }

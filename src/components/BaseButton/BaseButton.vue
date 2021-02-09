@@ -128,7 +128,7 @@ export default {
     justify-center
     rounded
     transition-all
-    whitespace-no-wrap
+    whitespace-nowrap
     /* For legacy */
     border-solid;
 }
@@ -205,9 +205,10 @@ export default {
   @apply outline-none;
 }
 
-.base-button--regular:not(.base-button--inverted):not([disabled]) {
+.base-button--regular:not(.base-button--inverted):not(.base-button--white):not([disabled]) {
   @apply shadow-2;
 }
+
 /*** Regular primary buttons */
 .base-button--regular.base-button--primary {
   @apply bg-primary text-white;
@@ -261,6 +262,19 @@ export default {
 }
 
 .base-button--regular.base-button--inverted:active:not([disabled]) {
+  @apply bg-primary-tint-5 text-primary;
+}
+
+/*** Regular primary white */
+.base-button--regular.base-button--white {
+  @apply bg-white border text-primary;
+}
+
+.base-button--regular.base-button--white:hover:not([disabled]) {
+  @apply text-primary-tint-1;
+}
+
+.base-button--regular.base-button--white:active:not([disabled]) {
   @apply bg-primary-tint-5 text-primary;
 }
 
@@ -334,6 +348,15 @@ export default {
 }
 
 .base-button--flat.base-button--inverted:hover:not([disabled]) {
+  @apply text-gray-5;
+}
+
+/*** Flat white buttons */
+.base-button--flat.base-button--white {
+  @apply text-white;
+}
+
+.base-button--flat.base-button--white:hover:not([disabled]) {
   @apply text-gray-5;
 }
 </style>

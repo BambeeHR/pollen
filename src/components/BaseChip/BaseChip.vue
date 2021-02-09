@@ -64,7 +64,7 @@ export default {
     items-center
     rounded-full
     text-gray-0
-    whitespace-no-wrap
+    whitespace-nowrap
     /* For legacy */
     border-solid;
 }

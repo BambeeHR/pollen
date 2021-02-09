@@ -7,7 +7,6 @@
     :error="error"
     :invalid="invalid"
     :disabled="disabled"
-    :focused="hasFocus"
     class="date-input"
     :class="[
       `date-input--${variant}`,

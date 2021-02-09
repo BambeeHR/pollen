@@ -45,7 +45,7 @@ export default {
     rounded
     transition-all
     w-8
-    whitespace-no-wrap
+    whitespace-nowrap
     /* For legacy */
     border-solid;
 }

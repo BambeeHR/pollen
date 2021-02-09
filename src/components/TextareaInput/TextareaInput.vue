@@ -4,7 +4,6 @@
     :variant="variant"
     :size="size"
     :label="label"
-    :focused="hasFocus"
     :error="error"
     :invalid="invalid"
     :disabled="disabled"
@@ -28,8 +27,6 @@
       :aria-describedby="error ? `${id}-error` : false"
       :disabled="disabled"
       @input="handleInput"
-      @focus="hasFocus = true"
-      @blur="hasFocus = false"
     />
   </FormField>
 </template>
@@ -105,11 +102,6 @@ export default {
       default: Variants.STANDARD,
       validator: (value) => Object.values(Variants).includes(value),
     },
-  },
-  data() {
-    return {
-      hasFocus: false,
-    };
   },
   methods: {
     handleInput(e) {

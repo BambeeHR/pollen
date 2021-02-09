@@ -10,6 +10,7 @@ const Button = Object.freeze({
     SECONDARY: 'secondary',
     TERTIARY: 'tertiary',
     INVERTED: 'inverted',
+    WHITE: 'white',
   },
 });
 

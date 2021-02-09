@@ -7,7 +7,6 @@
     :error="error"
     :invalid="invalid"
     :disabled="disabled"
-    :focused="hasFocus"
     class="text-input"
     :class="[
       `text-input--${variant}`,
@@ -35,8 +34,6 @@
       :aria-describedby="error ? `${id}-error` : false"
       :disabled="disabled"
       @input="handleInput"
-      @focus="hasFocus = true"
-      @blur="hasFocus = false"
     />
     <BaseIcon
       v-if="postIcon"
@@ -172,11 +169,6 @@ export default {
       validator: (value) => Object.values(Variants).includes(value),
     },
   },
-  data() {
-    return {
-      hasFocus: false,
-    };
-  },
   computed: {
     inputComponent() {
       return this.mask ? CleaveInput : 'input';
@@ -212,7 +204,7 @@ export default {
 
 <style scoped>
 .text-input__prefix {
-  @apply select-none text-gray-3 whitespace-no-wrap;
+  @apply select-none text-gray-3 whitespace-nowrap;
 }
 
 .text-input__field {
