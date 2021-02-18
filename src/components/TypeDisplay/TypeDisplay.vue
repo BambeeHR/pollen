@@ -61,7 +61,7 @@ export default {
   }
 
   .type-display-$(variant)--strong {
-    @apply font-semibold;
+    @apply font-bold;
   }
 }
 </style>
