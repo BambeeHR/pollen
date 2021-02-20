@@ -17,7 +17,12 @@
     :invalid="invalid"
     :disabled="disabled"
   >
-    <VSelect v-bind="passDownProps" @input="handleInput">
+    <VSelect
+      v-bind="passDownProps"
+      append-to-body
+      :calculate-position="withPopper"
+      @input="handleInput"
+    >
       <template #selected-option-container="{ deselect, option }">
         <BaseChip
           v-if="multiple"
@@ -39,6 +44,7 @@
 <script>
 import VSelect from 'vue-select';
 import shortid from 'shortid';
+import { createPopper } from '@popperjs/core';
 import BaseChip, { Variants as ChipVariants } from '../BaseChip/BaseChip.vue';
 import BaseIcon, { Icons } from '../BaseIcon/BaseIcon.vue';
 import Form from '../../constants/Form';
@@ -178,6 +184,26 @@ export default {
       }
       this.$emit('input', val);
     },
+    withPopper(dropdownList, component, { width }) {
+      // To avoid z-index issues, the `append-to-body` prop is used for VSelect,
+      // and Popper is used to position the resulting dropdown appropriately.
+      // https://vue-select.org/guide/positioning.html#calculated
+
+      // eslint-disable-next-line no-param-reassign
+      dropdownList.style.width = width;
+
+      const popper = createPopper(component.$refs.toggle, dropdownList, {
+        modifiers: [
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 16],
+            },
+          },
+        ],
+      });
+      return () => popper.destroy();
+    },
   },
 };
 </script>
@@ -235,7 +261,7 @@ export default {
 }
 
 .select-input >>> .vs__dropdown-menu {
-  @apply rounded-b-md;
+  @apply rounded-md;
 }
 
 .select-input--standard >>> .vs__dropdown-menu {

@@ -34,7 +34,7 @@
     "survey-vue": "^1.8.11",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-focus-lock": "^1.4.0",
-    "vue-select": "^3.10.7"
+    "vue-select": "^3.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
