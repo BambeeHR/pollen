@@ -36,12 +36,9 @@ export default {
 <style scoped>
 .modal-close {
   @apply bg-transparent 
-    border 
-    border-solid 
-    border-transparent 
+    border-none
     cursor-pointer
     p-2 
-    rounded-md 
     text-23;
 }
 
@@ -58,11 +55,11 @@ export default {
 }
 
 .modal-close--dark:focus {
-  @apply border-black;
+  @apply opacity-50;
 }
 
 .modal-close--light:focus {
-  @apply border-white;
+  @apply opacity-100;
 }
 
 .modal-close__accessible-label {

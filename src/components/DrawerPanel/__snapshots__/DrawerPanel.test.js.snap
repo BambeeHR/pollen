@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerPanel renders correctly 1`] = `
+<div
+  class="focus-lock"
+>
+  <div
+    aria-hidden="true"
+    tabindex="-1"
+  />
+   
+  <div
+    aria-hidden="true"
+    tabindex="-1"
+  />
+   
+  <div
+    data-lock=""
+  >
+    <div
+      aria-hidden="true"
+      class="drawer-panel drawer-panel--regular"
+    >
+      <header
+        class="drawer-panel__header"
+      >
+        Heading goes here
+      </header>
+       Content goes here 
+      <!---->
+    </div>
+     
+    <!---->
+  </div>
+   
+  <div
+    aria-hidden="true"
+    tabindex="-1"
+  />
+</div>
+`;

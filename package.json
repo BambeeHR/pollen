@@ -1,6 +1,6 @@
 {
   "name": "@bambee/pollen",
-  "version": "0.25.2",
+  "version": "0.26.0",
   "main": "./dist/pollen.common.js",
   "repository": "git://github.com/bambeehr/pollen.git",
   "scripts": {
@@ -33,7 +33,7 @@
     "shortid": "^2.2.15",
     "survey-vue": "^1.8.11",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "vue-focus-lock": "^1.4.0",
+    "vue-focus-lock": "^1.4.1",
     "vue-select": "^3.11.2"
   },
   "devDependencies": {

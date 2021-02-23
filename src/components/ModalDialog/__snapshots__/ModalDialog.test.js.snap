@@ -5,10 +5,12 @@ exports[`ModalDialog renders correctly 1`] = `
   class="modal-dialog"
 >
   <div
+    aria-hidden="true"
     tabindex="0"
   />
    
   <div
+    aria-hidden="true"
     tabindex="1"
   />
    
@@ -136,6 +138,7 @@ exports[`ModalDialog renders correctly 1`] = `
   </div>
    
   <div
+    aria-hidden="true"
     tabindex="0"
   />
 </div>

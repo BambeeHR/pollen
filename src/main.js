@@ -23,6 +23,7 @@ export { default as CheckboxInput } from '@/components/CheckboxInput/CheckboxInp
 export { default as CounterBadge } from '@/components/CounterBadge/CounterBadge.vue';
 export { default as CountersignIcon } from '@/components/CountersignIcon/CountersignIcon.vue';
 export { default as DateInput } from '@/components/DateInput/DateInput.vue';
+export { default as DrawerPanel } from '@/components/DrawerPanel/DrawerPanel.vue';
 export { default as FancyCard } from '@/components/FancyCard/FancyCard.vue';
 export { default as FancyIcon } from '@/components/FancyIcon/FancyIcon.vue';
 export { default as HamburgerButton } from '@/components/HamburgerButton/HamburgerButton.vue';

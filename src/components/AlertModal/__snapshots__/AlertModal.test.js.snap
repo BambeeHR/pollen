@@ -5,10 +5,12 @@ exports[`AlertModal renders error variant correctly 1`] = `
   class="modal-dialog alert-modal alert-modal--error"
 >
   <div
+    aria-hidden="true"
     tabindex="0"
   />
    
   <div
+    aria-hidden="true"
     tabindex="1"
   />
    
@@ -123,6 +125,7 @@ exports[`AlertModal renders error variant correctly 1`] = `
   </div>
    
   <div
+    aria-hidden="true"
     tabindex="0"
   />
 </div>
@@ -133,10 +136,12 @@ exports[`AlertModal renders success variant correctly 1`] = `
   class="modal-dialog alert-modal alert-modal--success"
 >
   <div
+    aria-hidden="true"
     tabindex="0"
   />
    
   <div
+    aria-hidden="true"
     tabindex="1"
   />
    
@@ -251,6 +256,7 @@ exports[`AlertModal renders success variant correctly 1`] = `
   </div>
    
   <div
+    aria-hidden="true"
     tabindex="0"
   />
 </div>
@@ -261,10 +267,12 @@ exports[`AlertModal renders warning variant correctly 1`] = `
   class="modal-dialog alert-modal alert-modal--warning"
 >
   <div
+    aria-hidden="true"
     tabindex="0"
   />
    
   <div
+    aria-hidden="true"
     tabindex="1"
   />
    
@@ -379,6 +387,7 @@ exports[`AlertModal renders warning variant correctly 1`] = `
   </div>
    
   <div
+    aria-hidden="true"
     tabindex="0"
   />
 </div>
