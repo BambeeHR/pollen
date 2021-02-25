@@ -117,7 +117,7 @@ export default {
 
 <style scoped>
 .task-card {
-  @apply bg-white flex flex-col flex-wrap max-w-5xl shadow-1 w-full;
+  @apply bg-white flex flex-col flex-wrap shadow-1 w-full;
 }
 
 .task-card__header {
