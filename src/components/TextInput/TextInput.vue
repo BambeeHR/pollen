@@ -35,6 +35,7 @@
       :disabled="disabled"
       @input="handleInput"
     />
+    <span v-if="postfix" class="text-input__postfix">{{ postfix }}</span>
     <BaseIcon
       v-if="postIcon"
       :icon="postIcon"
@@ -142,6 +143,11 @@ export default {
       type: String,
       default: null,
     },
+    /** An inline label string to display within the field. */
+    postfix: {
+      type: String,
+      default: null,
+    },
     /**
      * If true, shows a button that when clicked resets the value of the input.
      */
@@ -203,7 +209,8 @@ export default {
 </script>
 
 <style scoped>
-.text-input__prefix {
+.text-input__prefix,
+.text-input__postfix {
   @apply select-none text-gray-3 whitespace-nowrap;
 }
 
@@ -259,17 +266,20 @@ export default {
   @apply mr-4;
 }
 
-.text-input--dense .text-input__prefix {
+.text-input--dense .text-input__prefix,
+.text-input--dense .text-input__postfix {
   @apply text-14;
   margin-right: 0.375rem;
 }
 
-.text-input--normal .text-input__prefix {
+.text-input--normal .text-input__prefix,
+.text-input--normal .text-input__postfix {
   @apply text-16;
   margin-right: 0.375rem;
 }
 
-.text-input--large .text-input__prefix {
+.text-input--large .text-input__prefix,
+.text-input--large .text-input__postfix {
   @apply text-18;
   @apply mr-2;
 }

@@ -46,6 +46,12 @@ exports[`TextInput renders correctly 1`] = `
       value="Hello world!"
     />
      
+    <span
+      class="text-input__postfix"
+    >
+      H
+    </span>
+     
     <svg
       aria-hidden="true"
       class="base-icon svg-inline--fa fa-lock fa-w-14 text-input__icon text-input__icon--post"

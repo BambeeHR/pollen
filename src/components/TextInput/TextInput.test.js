@@ -17,6 +17,7 @@ describe('TextInput', () => {
         postIcon: testIcon,
         error: 'There was an error',
         prefix: '$',
+        postfix: 'H',
         label: 'Test',
         id: 'test',
         value: 'Hello world!',

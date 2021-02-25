@@ -59,7 +59,7 @@ export const Gallery = () => ({
               :placeholder="capitalize(size)"
               invalid
               @input="handleInput"
-            />            
+            />
             <TypeOverline tag="h3" class="mb-2">{{ size }}, Disabled</TypeOverline>
             <TextInput
               :variant="variant"
@@ -113,6 +113,9 @@ export const WithKnobs = () => {
       prefix: {
         default: text('Prefix', '$'),
       },
+      postfix: {
+        default: text('Postfix', 'H'),
+      },
       invalid: {
         default: boolean('Invalid', false),
       },
@@ -137,6 +140,7 @@ export const WithKnobs = () => {
           :pre-icon="preIcon"
           :post-icon="postIcon"
           :prefix="prefix"
+          :postfix="postfix"
           :invalid="invalid"
           :disabled="disabled"
           :show-reset="showReset"
