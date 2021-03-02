@@ -99,6 +99,9 @@ import {
 } from '@fortawesome/pro-light-svg-icons';
 
 import caretDown from '../../assets/icons/caret-down.svg';
+import checkHexagonSolid from '../../assets/icons/check-hexagon-solid.svg';
+import company from '../../assets/icons/company.svg';
+import companySolid from '../../assets/icons/company-solid.svg';
 import eyeClosed from '../../assets/icons/eye-closed.svg';
 import eyeOpen from '../../assets/icons/eye-open.svg';
 
@@ -183,6 +186,9 @@ Object.values(FAIcons).forEach((icon) => {
 
 const CustomIcons = Object.freeze({
   caretDown,
+  checkHexagonSolid,
+  company,
+  companySolid,
   eyeClosed,
   eyeOpen,
 });

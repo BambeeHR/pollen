@@ -1455,6 +1455,41 @@ exports[`Gallery renders gallery correctly 1`] = `
         class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--small"
       >
         <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--medium"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--large"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="text-12"
+    >
+      checkHexagonSolid
+    </div>
+  </div>
+  <div
+    class="col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2"
+  >
+    <div
+      class="flex items-end mb-1"
+    >
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--small"
+      >
+        <svg
           aria-hidden="true"
           class="base-icon svg-inline--fa fa-chevron-left fa-w-8 icon-button__icon"
           data-icon="chevron-left"
@@ -2405,6 +2440,76 @@ exports[`Gallery renders gallery correctly 1`] = `
       class="text-12"
     >
       commentSolid
+    </div>
+  </div>
+  <div
+    class="col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2"
+  >
+    <div
+      class="flex items-end mb-1"
+    >
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--small"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--medium"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--large"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="text-12"
+    >
+      company
+    </div>
+  </div>
+  <div
+    class="col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2"
+  >
+    <div
+      class="flex items-end mb-1"
+    >
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--small"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--medium"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+      <div
+        class="mr-1 flex-shrink-0 highlighted-icon highlighted-icon--large"
+      >
+        <svg
+          class="base-icon icon-button__icon base-icon--custom"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="text-12"
+    >
+      companySolid
     </div>
   </div>
   <div

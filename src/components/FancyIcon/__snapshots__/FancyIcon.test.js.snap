@@ -18,6 +18,23 @@ exports[`FancyIcon renders gallery correctly 1`] = `
     <div
       class="font-body-small mt-2"
     >
+      award
+    </div>
+  </div>
+  <div
+    class="text-center m-3"
+  >
+    <div
+      style="font-size: 72px;"
+    >
+      <svg
+        class="fancy-icon"
+      />
+    </div>
+     
+    <div
+      class="font-body-small mt-2"
+    >
       clipboard
     </div>
   </div>
@@ -52,7 +69,41 @@ exports[`FancyIcon renders gallery correctly 1`] = `
     <div
       class="font-body-small mt-2"
     >
+      groupLearn
+    </div>
+  </div>
+  <div
+    class="text-center m-3"
+  >
+    <div
+      style="font-size: 72px;"
+    >
+      <svg
+        class="fancy-icon"
+      />
+    </div>
+     
+    <div
+      class="font-body-small mt-2"
+    >
       puzzlePeople
+    </div>
+  </div>
+  <div
+    class="text-center m-3"
+  >
+    <div
+      style="font-size: 72px;"
+    >
+      <svg
+        class="fancy-icon"
+      />
+    </div>
+     
+    <div
+      class="font-body-small mt-2"
+    >
+      services
     </div>
   </div>
   <div

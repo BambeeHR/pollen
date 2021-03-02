@@ -124,6 +124,7 @@ module.exports.default = {
   },
   fontFamily: {
     sans: "'proxima-nova', 'proxima-soft', 'system-ui', sans-serif",
+    serif: "'p22-mackinac-pro', serif",
   },
   fontSize,
   fontWeight: {
@@ -131,6 +132,7 @@ module.exports.default = {
     medium: '500',
     semibold: '600',
     bold: '700',
+    'extra-bold': '800',
   },
   inset: {
     '1/2': '50%',

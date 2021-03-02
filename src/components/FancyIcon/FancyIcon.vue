@@ -12,17 +12,23 @@
 import camelCase from 'lodash/camelCase';
 import snakeCase from 'lodash/snakeCase';
 
+import award from '../../assets/icons/fancy/award.svg';
 import clipboard from '../../assets/icons/fancy/clipboard.svg';
 import clipboardCheck from '../../assets/icons/fancy/clipboard-check.svg';
+import groupLearn from '../../assets/icons/fancy/group-learn.svg';
 import puzzlePeople from '../../assets/icons/fancy/puzzle-people.svg';
+import services from '../../assets/icons/fancy/services.svg';
 import signTablet from '../../assets/icons/fancy/sign-tablet.svg';
 
 import getAttributes from '../../util/getAttributes';
 
 const IconComponents = Object.freeze({
+  award,
   clipboard,
   clipboardCheck,
+  groupLearn,
   puzzlePeople,
+  services,
   signTablet,
 });
 

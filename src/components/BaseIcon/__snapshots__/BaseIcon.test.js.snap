@@ -515,6 +515,19 @@ exports[`Gallery renders gallery correctly 1`] = `
     class="flex items-center col-span-6 sm:col-span-4 md:col-span-2"
   >
     <svg
+      class="base-icon base-icon--custom"
+    />
+     
+    <div
+      class="text-12 ml-2"
+    >
+      checkHexagonSolid
+    </div>
+  </div>
+  <div
+    class="flex items-center col-span-6 sm:col-span-4 md:col-span-2"
+  >
+    <svg
       aria-hidden="true"
       class="base-icon svg-inline--fa fa-chevron-left fa-w-8"
       data-icon="chevron-left"
@@ -847,6 +860,32 @@ exports[`Gallery renders gallery correctly 1`] = `
       class="text-12 ml-2"
     >
       commentSolid
+    </div>
+  </div>
+  <div
+    class="flex items-center col-span-6 sm:col-span-4 md:col-span-2"
+  >
+    <svg
+      class="base-icon base-icon--custom"
+    />
+     
+    <div
+      class="text-12 ml-2"
+    >
+      company
+    </div>
+  </div>
+  <div
+    class="flex items-center col-span-6 sm:col-span-4 md:col-span-2"
+  >
+    <svg
+      class="base-icon base-icon--custom"
+    />
+     
+    <div
+      class="text-12 ml-2"
+    >
+      companySolid
     </div>
   </div>
   <div
